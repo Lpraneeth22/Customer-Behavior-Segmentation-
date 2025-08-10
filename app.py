@@ -178,8 +178,9 @@ if st.button("🔍 Predict Cluster"):
 
     # ---- Display Output ----
     st.success(f"Predicted Cluster: {cluster_num}")
-    st.info(f"📌 Label: {cluster_labels.get(cluster_num, 'Unknown cluster')}")
+    st.info(f" {cluster_labels.get(cluster_num, 'Unknown cluster')}")
     st.balloons()
+
 
 
 
