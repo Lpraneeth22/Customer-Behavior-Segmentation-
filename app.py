@@ -53,7 +53,7 @@ Clustering methods such as K-Means, DBSCAN, and Hierarchical Clustering were app
 These insights can guide product recommendations, promotions, and strategic decisions.""")
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    st.image("https://images.app.goo.gl/Le9HhNmdHXmPzVmb9", width=400)
+    st.image("https://images.app.goo.gl/Le9HhNmdHXmPzVmb9", width=800)
 
 st.markdown('<h2 id="project-overview">🔍 Project Overview</h2>', unsafe_allow_html=True)
 
@@ -69,7 +69,7 @@ st.header("📊 Dataset Overview")
 column_data = {
     "Column Name": [
        "ID","Year_Birth","Education","Marital_Status",
-"Income""Kidhome","Teenhome","Dt_Customer","Recency",
+"Income","Kidhome","Teenhome","Dt_Customer","Recency",
 "MntWines","MntFruits","MntMeatProducts","MntFishProducts",
 "MntSweetProducts","MntGoldProds","NumDealsPurchases","NumWebPurchases",
 "NumCatalogPurchases","NumStorePurchases","NumWebVisitsMonth","AcceptedCmp1","AcceptedCmp2",
@@ -111,7 +111,7 @@ column_data = {
 df_columns = pd.DataFrame(column_data)
 st.dataframe(df_columns)
 
-st.markdown('<h2 id="prediction">🐾 Prediction</h2>', unsafe_allow_html=True)
+st.markdown('<h2 id="prediction"> Prediction</h2>', unsafe_allow_html=True)
 st.write("---")
 
 
@@ -178,5 +178,6 @@ if st.button("🔍 Predict Cluster"):
     # ---- Display Output ----
     st.success(f"Predicted Cluster: {cluster_num}")
     st.info(f"📌 Label: {cluster_labels.get(cluster_num, 'Unknown cluster')}")
+
 
 
