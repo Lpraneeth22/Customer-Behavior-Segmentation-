@@ -123,20 +123,21 @@ st.markdown("Enter customer details to predict their cluster.")
 col1, col2 = st.columns(2)
 
 with col1:
-    Income = st.number_input("Income", min_value=0)
-    MntWines = st.number_input("MntWines", min_value=0)
-    MntFruits = st.number_input("MntFruits", min_value=0)
-    MntMeatProducts = st.number_input("MntMeatProducts", min_value=0)
-    MntFishProducts = st.number_input("MntFishProducts", min_value=0)
-    MntSweetProducts = st.number_input("MntSweetProducts", min_value=0)
+    Income = st.number_input("Income", min_value=1730, max_value=666666, step=100)
+    MntWines = st.number_input("MntWines", min_value=0, max_value=1493, step=10)
+    MntFruits = st.number_input("MntFruits", min_value=0, max_value=199, step=1)
+    MntMeatProducts = st.number_input("MntMeatProducts", min_value=0, max_value=1725, step=10)
+    MntFishProducts = st.number_input("MntFishProducts", min_value=0, max_value=259, step=1)
+    MntSweetProducts = st.number_input("MntSweetProducts", min_value=0, max_value=262, step=1)
 
 with col2:
-    MntGoldProds = st.number_input("MntGoldProds", min_value=0)
-    NumDealsPurchases = st.number_input("NumDealsPurchases", min_value=0)
-    NumWebPurchases = st.number_input("NumWebPurchases", min_value=0)
-    NumCatalogPurchases = st.number_input("NumCatalogPurchases", min_value=0)
-    NumStorePurchases = st.number_input("NumStorePurchases", min_value=0)
-    NumWebVisitsMonth = st.number_input("NumWebVisitsMonth", min_value=0)
+    MntGoldProds = st.number_input("MntGoldProds", min_value=0, max_value=321, step=1)
+    NumDealsPurchases = st.number_input("NumDealsPurchases", min_value=0, max_value=15, step=1)
+    NumWebPurchases = st.number_input("NumWebPurchases", min_value=0, max_value=27, step=1)
+    NumCatalogPurchases = st.number_input("NumCatalogPurchases", min_value=0, max_value=28, step=1)
+    NumStorePurchases = st.number_input("NumStorePurchases", min_value=0, max_value=13, step=1)
+    NumWebVisitsMonth = st.number_input("NumWebVisitsMonth", min_value=0, max_value=20, step=1)
+
 
 # =========================
 # 🚀 Prediction Logic
@@ -178,6 +179,7 @@ if st.button("🔍 Predict Cluster"):
     # ---- Display Output ----
     st.success(f"Predicted Cluster: {cluster_num}")
     st.info(f"📌 Label: {cluster_labels.get(cluster_num, 'Unknown cluster')}")
+    st.balloons()
 
 
 
