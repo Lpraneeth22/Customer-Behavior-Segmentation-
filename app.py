@@ -16,8 +16,8 @@ with open("scal.pkl", "rb") as f:
 # =========================
 # 🏷️ App Title
 # =========================
-st.set_page_config(page_title="Customer Segmentation Predictor", layout="centered")
-st.title("📊 Customer Segmentation Predictor")
+st.set_page_config(page_title="Customer Behavior Segmentation Predicton", layout="centered")
+st.title("📊 Customer Behavior Segmentation Predicton")
 st.sidebar.markdown("""
 <style>
     .big-link {
@@ -180,6 +180,7 @@ if st.button("🔍 Predict Cluster"):
     st.success(f"Predicted Cluster: {cluster_num}")
     st.info(f" {cluster_labels.get(cluster_num, 'Unknown cluster')}")
     st.balloons()
+
 
 
 
