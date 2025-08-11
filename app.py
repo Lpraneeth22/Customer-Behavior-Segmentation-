@@ -53,7 +53,7 @@ Clustering methods such as K-Means, DBSCAN, and Hierarchical Clustering were app
 These insights can guide product recommendations, promotions, and strategic decisions.""")
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    st.image("https://images.app.goo.gl/Le9HhNmdHXmPzVmb9", width=800)
+    st.image("https://www.google.com/imgres?imgurl=https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/06/10115059/Customer-Segmentation.jpg&tbnid=0EDd0L2f3m9vYM&vet=1&imgrefurl=https://www.ezrankings.com/blog/customer-segmentation/&docid=APVnFJQl2bErdM&w=760&h=440&source=sh/x/im/m1/1&kgs=914c271b53a12602&shem=isst", width=800)
 
 st.markdown('<h2 id="project-overview">🔍 Project Overview</h2>', unsafe_allow_html=True)
 
@@ -180,6 +180,7 @@ if st.button("🔍 Predict Cluster"):
     st.success(f"Predicted Cluster: {cluster_num}")
     st.info(f" {cluster_labels.get(cluster_num, 'Unknown cluster')}")
     st.balloons()
+
 
 
 
