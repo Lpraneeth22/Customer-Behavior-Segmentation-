@@ -1,4 +1,5 @@
 🛍️ Customer Behavior Segmentation & Clustering Models
+
 📌 Overview
 
 This project analyzes customer purchasing behavior and demographic data to identify meaningful customer segments. By applying unsupervised machine learning algorithms like K-Means, DBSCAN, and Hierarchical Clustering, the project uncovers patterns that help businesses design targeted marketing campaigns, improve customer engagement, and optimize resource allocation.
