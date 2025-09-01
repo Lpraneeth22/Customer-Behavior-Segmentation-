@@ -77,3 +77,9 @@ Run final_customer_segmentation.ipynb.
  ┣ 📜 README.md
  ┗ 📂 data
      ┗ 📜 marketing_campaign.csv
+
+🚀 Deployment
+
+This project is deployed using Streamlit Cloud for easy accessibility and interactivity.
+
+🔗 Live App: Customer Segmentation Streamlit App
