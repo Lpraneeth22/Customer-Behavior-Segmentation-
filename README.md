@@ -54,7 +54,7 @@ Helped optimize marketing efforts and resource allocation based on clusters.
 
 Clone this repository:
 
-git clone https://github.com/your-username/customer-segmentation.git
+git clone https://github.com/Lpraneeth22/customer-segmentation.git
 cd customer-segmentation
 
 
